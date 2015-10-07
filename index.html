@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>Iskender Piyale-Sheard | IzzyDoesIzzy</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		<link src="assets/js/typed.js" rel="text/javascript" ></link>
+		
+
+		<!-- Custom styles for this template -->
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	</head>
+
+ 	<body>
+
+	<div class="site-wrapper">
+
+		<div class="site-wrapper-inner">
+
+			<div class="cover-container">
+        
+
+		        <div class="container">
+		        	<div class="row">
+			          	<div class="col-md-8 col-md-offset-2">
+			          		<img class="profilepic" src="assets/img/izzyprofile.jpg">
+		  	   	            <h1 class="cover-heading"><span class="element">Hi, I'm Izzy!</span></h1>
+		  	   	            <p class="lead">I'm a <span class="emph">teacher</span>, <span class="emph">mentor</span> and <span class="emph">adventurer</span> at heart. I'm possibly the most positive person on Earth and I love inspiring and mentoring others to achieve their personal goals. I also like to build websites and design logos.</p>
+		  	   	        </div>
+		  	   	    </div>
+
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<div class="row">
+								<div class="social">
+									<a href="http://www.twitter.com/izzydoesizzy" target="_blank">
+									  <i class="fa fa-twitter fa-3x"></i>
+									</a>
+									<a href="http://www.instagram.com/izzydoesizzy" target="_blank">
+									  <i class="fa fa-instagram fa-3x"></i>
+									</a>
+									<!-- <a href="http://www.dribbble.com/izzydoesizzy" target="_blank">
+									  <i class="fa fa-dribbble fa-3x"></i>
+									</a> -->
+									<a href="https://ca.linkedin.com/in/ipiyale" target="_blank">
+									  <i class="fa fa-linkedin fa-3x"></i>
+									</a>
+									<a href="https://medium.com/@izzydoesizzy" target="_blank">
+									  <i class="fa fa-medium fa-3x"></i>
+									</a>
+									<a href="http://www.youtube.com/user/izzydoesizzy" target="_blank">
+									  <i class="fa fa-youtube fa-3x"></i>
+									</a>
+									<a href="http://www.github.com/izzydoesizzy" target="_blank">
+									  <i class="fa fa-github fa-3x"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+			        </div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+	$(function(){
+
+		$("#typed").typed({
+			strings: ["Typed.js is a jQuery plugin.", "It tyops out", "It types out sentences.", "And then deletes them.", "Try it out!"],
+			typeSpeed: 30,
+      callback: function(){
+        shift();
+      }
+		});
+
+	});
+  function shift(){
+      $(".head-wrap").addClass("shift-text");
+      terminalHeight();
+  }
+
+  function terminalHeight(){
+      var termHeight = $(".terminal-height");
+      var value = termHeight.text();
+      value = parseInt(value);
+      setTimeout(function(){
+          if (value > 10){
+              value = value-1;
+              this.txtValue = value.toString();
+              termHeight.text(this.txtValue);
+              self.terminalHeight();
+          }
+          else{
+              clearTimeout();
+          }
+      }, 10);
+  }
+	</script>
+  
+		
+	</body>
+</html>
