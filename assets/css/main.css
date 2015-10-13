@@ -94,6 +94,13 @@ a:hover{
 	opacity: 0.5;
 }
 
+a:focus {
+    color:white;
+    opacity: 1.0;
+    text-decoration: none; 
+    outline: none;
+}
+
 .lead {
 	margin-bottom:0;
 }
